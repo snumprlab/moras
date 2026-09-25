@@ -184,12 +184,6 @@ def main():
             generated_ids = output.sequences
             hidden_states = output.hidden_states
             
-            print(tokenizer.decode(generated_ids[0]).strip())
-
-
-
-
-
             token_states = []
             for i in range(len(hidden_states)):
                 temp = []
